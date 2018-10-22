@@ -10,7 +10,7 @@
     { "id": 8, "topic": "Concurrent Task", "name": "npm-run-all" },
     { "id": 9, "topic": "Transpiling", "name": "Babel" },
     { "id": 10, "topic": "Bundling", "name": "Webpack" },
-    { "id": 11, "topic": "Automated Testing", "name": "Jest, Enzyme, Coveralls" },
+    { "id": 11, "topic": "Automated Testing", "name": "Jest, Coveralls" },
     { "id": 12, "topic": "Continuous Integration", "name": "CircleCI" }
   ]
 }
