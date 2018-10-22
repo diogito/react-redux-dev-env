@@ -1,0 +1,8 @@
+export const APP_LOAD = 'APP_LOAD';
+export const BEGIN_AJAX_CALL = 'BEGIN_AJAX_CALL';
+export const AJAX_CALL_ERROR = 'AJAX_CALL_ERROR';
+export const HOME_PAGE_LOADED = 'HOME_PAGE_LOADED';
+export const HOME_PAGE_UNLOADED = 'HOME_PAGE_UNLOADED';
+
+export const LOAD_STACK = 'LOAD_STACK';
+export const LOAD_STACK_SUCCESS = 'LOAD_STACK_SUCCESS';

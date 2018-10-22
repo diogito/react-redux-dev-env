@@ -1,0 +1,17 @@
+{
+  "stack": [
+    { "id": 1, "topic": "Editor", "name": "Editorconfig" },
+    { "id": 2, "topic": "Package Management", "name": "Yarn" },
+    { "id": 3, "topic": "Package Security", "name": "nsp" },
+    { "id": 4, "topic": "Linting", "name": "ESLint" },
+    { "id": 5, "topic": "Development Web Server", "name": "Express" },
+    { "id": 6, "topic": "Sharing Work in Progress", "name": "Localtunnel" },
+    { "id": 7, "topic": "Automation", "name": "Npm Script" },
+    { "id": 8, "topic": "Concurrent Task", "name": "npm-run-all" },
+    { "id": 9, "topic": "Transpiling", "name": "Babel" },
+    { "id": 10, "topic": "Bundling", "name": "Webpack" },
+    { "id": 11, "topic": "Automated Testing", "name": "Jest, Enzyme, Coveralls" },
+    { "id": 12, "topic": "Continuous Integration", "name": "CircleCI" }
+  ]
+}
+
