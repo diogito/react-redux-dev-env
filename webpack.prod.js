@@ -10,7 +10,6 @@ const common = require('./webpack.common.js');
 const CompressionPlugin = require('compression-webpack-plugin');
 const BrotliPlugin = require('brotli-webpack-plugin');
 
-
 module.exports = merge(common, {
   mode: 'production',
   devtool: 'source-map',
@@ -99,36 +98,6 @@ module.exports = merge(common, {
         exclude: /node_modules/,
         use: [{loader: 'babel-loader'}]
       },
-      {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader,
-          },
-          {
-            loader: require.resolve('css-loader'),
-            options: {
-              importLoaders: 1,
-              sourceMap: true
-            }
-          },
-          {
-            loader: require.resolve('postcss-loader'),
-            options: {
-              ident: 'postcss',
-              plugins: () => [
-                require('postcss-flexbugs-fixes'),
-                require('postcss-preset-env')({
-                  autoprefixer: {
-                  },
-                  stage: 3
-                })
-              ],
-              sourceMap: true
-            }
-          }
-        ]
-      }
     ]
   }
 }

@@ -12,8 +12,8 @@
     "postbuild": "babel-node ./scripts/distServer.js",
     "test:watch": "npm run test -- --watch",
     "test": "jest",
-    "start": "npm-run-all --parallel security-check test:watch json-server dev-server",
-    "build": "babel-node scripts/build.js"
+    "start": "NODE_ENV=development npm-run-all --parallel security-check test:watch json-server dev-server",
+    "build": "NODE_ENV=production babel-node scripts/build.js"
   },
   "babel": {
     "presets": [
