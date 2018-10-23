@@ -6,22 +6,24 @@ import { APP_LOAD } from '../constants/actionTypes';
 import Home from './Home';
 import Header from './Header';
 import Footer from './Footer';
-import './App.css';
+import styles from './App.css';
 
 class App extends React.Component {
+
   stackRow(stackComponent, index) {
     return <div key={index}>{stackComponent.name}</div>
   }
 
   UNSAFE_componentWillMount() {
+    document.getElementById('root').className = ['text-center', styles.appContainer].join(' ');
     this.props.onLoad();
   }
 
   render() {
     return (
-      <div className="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div className={[styles.contentContainer, 'd-flex w-100 h-100 p-3 mx-auto flex-column'].join(' ')}>
         <Header />
-        <main role="main" className="inner cover">
+        <main role="main" className={['inner', styles.cover].join(' ')}>
           <Switch>
             <Route exact path='/' component={Home}/>
           </Switch>

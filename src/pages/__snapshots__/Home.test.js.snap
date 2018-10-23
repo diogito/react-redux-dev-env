@@ -18,7 +18,6 @@ exports[`should shallow correctrly 1`] = `
       >
         <img
           alt="logo-react"
-          className="App-logo"
           src={[Function]}
         />
       </div>
@@ -27,7 +26,6 @@ exports[`should shallow correctrly 1`] = `
       >
         <img
           alt="logo-redux"
-          className="App-logo"
           src={[Function]}
         />
       </div>

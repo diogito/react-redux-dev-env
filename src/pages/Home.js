@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import styles from './Home.modules.css';
 import logoReact from '../images/logo-react.svg';
 import logoRedux from '../images/logo-redux.svg';
 
@@ -32,10 +33,10 @@ export class Home extends Component {
         <div className="container">
           <div className="row">
             <div className="col">
-              <img src={logoReact} className='App-logo' alt='logo-react' />
+              <img src={logoReact} className={styles.logo} alt='logo-react' />
             </div>
             <div className="col">
-              <img src={logoRedux} className='App-logo' alt='logo-redux' />
+              <img src={logoRedux} className={styles.logo} alt='logo-redux' />
             </div>
           </div>
         </div>
