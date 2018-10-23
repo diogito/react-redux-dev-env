@@ -91,14 +91,4 @@ module.exports = merge(common, {
     new WebpackChunkHash(),
     new WorkboxWebpackPlugin.GenerateSW()
   ],
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: [{loader: 'babel-loader'}]
-      },
-    ]
-  }
-}
-);
+});
