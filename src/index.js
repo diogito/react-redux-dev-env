@@ -9,7 +9,6 @@ import App from './pages/App';
 
 /* eslint-disable no-console */
 
-
 if (process.env.NODE_ENV !== 'production') {
    console.log('Looks like we are in development mode!');
 } else {
@@ -43,5 +42,3 @@ if (module.hot) {
     render(App);
   })
 }
-
-

@@ -1,6 +1,5 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import createSagaMiddleware from 'redux-saga';
-import { loadStack } from './modules/stack';
 import logger from 'redux-logger';
 import createHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
@@ -29,5 +28,3 @@ export const store = createStore(
 );
 
 sagaMiddleware.run(rootSaga);
-
-//store.dispatch(loadStack());
